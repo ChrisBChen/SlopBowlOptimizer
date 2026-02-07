@@ -1,0 +1,43 @@
+:root {
+  --portion-width: 64px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#restaurantSelect {
+  min-width: 220px;
+}
+
+.ingredient-row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.ingredient-row:last-child {
+  border-bottom: 0;
+}
+
+.ingredient-meta {
+  font-size: 0.8rem;
+}
+
+.portion-group .btn {
+  min-width: var(--portion-width);
+}
+
+.violation-message {
+  min-height: 1.1rem;
+  font-size: 0.8rem;
+}
+
+.totals-card {
+  position: sticky;
+  top: 88px;
+}
+
+@media (max-width: 1199.98px) {
+  .totals-card {
+    position: static;
+  }
+}
