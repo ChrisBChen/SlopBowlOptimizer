@@ -31,13 +31,13 @@ body {
   font-size: 0.8rem;
 }
 
-.totals-card {
+.sidebar-sticky {
   position: sticky;
   top: 88px;
 }
 
 @media (max-width: 1199.98px) {
-  .totals-card {
+  .sidebar-sticky {
     position: static;
   }
 }
