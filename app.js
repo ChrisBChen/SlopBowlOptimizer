@@ -350,8 +350,9 @@ function renderIngredients() {
           </h2>
           <div
             id="collapse-${categoryId}"
-            class="accordion-collapse collapse ${isOpen ? 'show' : ''}"
+            class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
             aria-labelledby="heading-${categoryId}"
+            data-bs-parent="#ingredientsAccordion"
           >
             <div class="p-3 border-bottom bg-body-tertiary d-flex justify-content-between align-items-center gap-2">
               <input type="search" class="form-control form-control-sm category-search" data-category-id="${category.id}" placeholder="Filter ${category.label.toLowerCase()}..." />
