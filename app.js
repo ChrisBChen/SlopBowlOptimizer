@@ -29,7 +29,8 @@ const state = {
   selectedRestaurantId: '',
   constraints: { ...DEFAULT_CONSTRAINTS },
   portions: {},
-  strictMinEnforcement: false
+  strictMinEnforcement: false,
+  openCategoryId: 'base'
 };
 
 const elements = {
@@ -42,6 +43,7 @@ const elements = {
   constraintsForm: document.getElementById('constraintsForm'),
   ingredientsAccordion: document.getElementById('ingredientsAccordion'),
   totalsPanel: document.getElementById('totalsPanel'),
+  orderSummaryPanel: document.getElementById('orderSummaryPanel'),
   toastMessage: document.getElementById('toastMessage'),
   appToast: document.getElementById('appToast')
 };
@@ -135,7 +137,8 @@ function encodeStateToUrl(currentState) {
     r: currentState.selectedRestaurantId,
     c: currentState.constraints,
     p: compactPortions,
-    m: currentState.strictMinEnforcement ? 1 : 0
+    m: currentState.strictMinEnforcement ? 1 : 0,
+    o: currentState.openCategoryId || 'base'
   };
 
   const encoded = btoa(encodeURIComponent(JSON.stringify(payload)));
@@ -154,7 +157,8 @@ function decodeStateFromUrl() {
       selectedRestaurantId: parsed.r,
       constraints: parsed.c,
       portions: parsed.p,
-      strictMinEnforcement: Boolean(parsed.m)
+      strictMinEnforcement: Boolean(parsed.m),
+      openCategoryId: parsed.o || 'base'
     };
   } catch (error) {
     console.warn('Could not parse share state:', error);
@@ -200,6 +204,10 @@ function applyDecodedState(decoded) {
 
   state.strictMinEnforcement = Boolean(decoded.strictMinEnforcement);
   elements.strictMinsSwitch.checked = state.strictMinEnforcement;
+
+  if (decoded.openCategoryId && CATEGORY_ORDER.includes(decoded.openCategoryId)) {
+    state.openCategoryId = decoded.openCategoryId;
+  }
 
   const restaurant = getRestaurant();
   const ingredientIds = new Set(flattenIngredients(restaurant).map((ingredient) => ingredient.id));
@@ -323,15 +331,18 @@ function renderIngredients() {
         })
         .join('');
 
+      const isOpen = category.id === state.openCategoryId || (!state.openCategoryId && index === 0);
+
       return `
         <div class="accordion-item">
           <h2 class="accordion-header" id="heading-${categoryId}">
             <button
-              class="accordion-button ${index === 0 ? '' : 'collapsed'}"
+              class="accordion-button ${isOpen ? '' : 'collapsed'}"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapse-${categoryId}"
-              aria-expanded="${index === 0 ? 'true' : 'false'}"
+              data-category-id="${category.id}"
+              aria-expanded="${isOpen ? 'true' : 'false'}"
               aria-controls="collapse-${categoryId}"
             >
               ${category.label}
@@ -394,11 +405,40 @@ function renderTotals() {
   elements.totalsPanel.innerHTML = lines;
 }
 
+function renderOrderSummary() {
+  const restaurant = getRestaurant();
+  const selected = flattenIngredients(restaurant)
+    .filter((ingredient) => Number(state.portions[ingredient.id] || 0) > 0)
+    .map((ingredient) => ({
+      ...ingredient,
+      portion: Number(state.portions[ingredient.id])
+    }));
+
+  if (!selected.length) {
+    elements.orderSummaryPanel.innerHTML = '<div class="text-muted small">No items selected yet.</div>';
+    return;
+  }
+
+  const html = selected
+    .map(
+      (item) => `
+        <div class="d-flex justify-content-between align-items-center border-bottom py-2 small">
+          <span>${item.name}</span>
+          <span class="badge text-bg-light border">${item.portion}x</span>
+        </div>
+      `
+    )
+    .join('');
+
+  elements.orderSummaryPanel.innerHTML = html;
+}
+
 function renderAll() {
   renderRestaurantSelect();
   renderConstraints();
   renderIngredients();
   renderTotals();
+  renderOrderSummary();
   encodeStateToUrl(state);
 }
 
@@ -430,6 +470,7 @@ function handleIngredientClick(event) {
   state.portions[ingredientId] = portion;
   renderIngredients();
   renderTotals();
+  renderOrderSummary();
   encodeStateToUrl(state);
 }
 
@@ -455,6 +496,7 @@ function attachListeners() {
     resetPortions();
     renderIngredients();
     renderTotals();
+    renderOrderSummary();
     encodeStateToUrl(state);
   });
 
@@ -516,6 +558,7 @@ function attachListeners() {
         state.portions = nextState.portions;
         renderIngredients();
         renderTotals();
+        renderOrderSummary();
         encodeStateToUrl(state);
       }
       return;
@@ -527,6 +570,14 @@ function attachListeners() {
   elements.ingredientsAccordion.addEventListener('input', (event) => {
     if (!event.target.classList.contains('category-search')) return;
     filterCategory(event.target.dataset.categoryId, event.target.value);
+  });
+
+  elements.ingredientsAccordion.addEventListener('click', (event) => {
+    const trigger = event.target.closest('.accordion-button[data-category-id]');
+    if (!trigger) return;
+
+    state.openCategoryId = trigger.dataset.categoryId;
+    encodeStateToUrl(state);
   });
 }
 

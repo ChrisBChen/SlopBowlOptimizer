@@ -26,7 +26,8 @@ Slop Bowl Calculator is a static, single-page nutrition guardrail tool for custo
   - Reset bowl
   - Apply/restore default constraints
   - Copy share link (URL hash encoded)
-- Share links restore restaurant, constraints, strict-min toggle, and selected portions.
+- Share links restore restaurant, constraints, strict-min toggle, selected portions, and the currently opened ingredient category.
+- Current order panel lists all selected items and their portions for easy ordering.
 
 ## Project structure
 
