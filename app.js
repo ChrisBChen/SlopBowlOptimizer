@@ -253,12 +253,28 @@ function renderConstraints() {
   elements.constraintsForm.innerHTML = html;
 }
 
-function nutritionPreview(ingredient) {
+function nutritionTooltip(ingredient) {
+  return [
+    `Calories: ${toFixedDisplay(ingredient.calories, '')}`,
+    `Total Fat: ${toFixedDisplay(ingredient.total_fat_g, 'g')} g`,
+    `Saturated Fat: ${toFixedDisplay(ingredient.sat_fat_g, 'g')} g`,
+    `Cholesterol: ${toFixedDisplay(ingredient.cholesterol_mg, 'mg')} mg`,
+    `Sodium: ${toFixedDisplay(ingredient.sodium_mg, 'mg')} mg`,
+    `Protein: ${toFixedDisplay(ingredient.protein_g, 'g')} g`,
+    `Fiber: ${toFixedDisplay(ingredient.fiber_g, 'g')} g`,
+    `Sugar: ${toFixedDisplay(ingredient.sugar_g, 'g')} g`
+  ].join('\n');
+}
+
+function nutritionPills(ingredient) {
+  const tooltip = nutritionTooltip(ingredient);
   return `
-    ${toFixedDisplay(ingredient.calories, '')} cal ·
-    ${toFixedDisplay(ingredient.protein_g, 'g')}g protein ·
-    ${toFixedDisplay(ingredient.fiber_g, 'g')}g fiber ·
-    ${toFixedDisplay(ingredient.sodium_mg, 'mg')}mg sodium
+    <div class="ingredient-nutrient-pills" title="${tooltip}">
+      <span class="nutrient-pill calories">${toFixedDisplay(ingredient.calories, '')} cal</span>
+      <span class="nutrient-pill fat">${toFixedDisplay(ingredient.total_fat_g, 'g')}/${toFixedDisplay(ingredient.sat_fat_g, 'g')}g fat</span>
+      <span class="nutrient-pill cholesterol">${toFixedDisplay(ingredient.cholesterol_mg, 'mg')}mg chol</span>
+      <span class="nutrient-pill sodium">${toFixedDisplay(ingredient.sodium_mg, 'mg')}mg sodium</span>
+    </div>
   `;
 }
 
@@ -306,7 +322,7 @@ function renderIngredients() {
               <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-2">
                 <div>
                   <div class="fw-medium">${ingredient.name}</div>
-                  <div class="text-muted ingredient-meta">${nutritionPreview(ingredient)}</div>
+                  ${nutritionPills(ingredient)}
                   <div class="text-danger violation-message">${rowReason}</div>
                 </div>
                 <div class="btn-group portion-group" role="group" aria-label="Portion for ${ingredient.name}">
@@ -387,15 +403,24 @@ function renderTotals() {
             ? `${formatValue(remaining, config.unit)} above min`
             : `${formatValue(Math.abs(remaining), config.unit)} needed`;
 
+      const rawProgress = limit > 0 ? (value / limit) * 100 : (value > 0 ? 100 : 0);
+      const progress = Math.max(0, Math.min(rawProgress, 100));
+      const progressClass = statusPass ? 'bg-success' : 'bg-danger';
+
       return `
-        <div class="d-flex justify-content-between align-items-start border-bottom py-2">
-          <div>
-            <div class="fw-medium">${config.label}</div>
-            <div class="small text-muted">${remainingLabel}: ${remainingText}</div>
+        <div class="totals-row">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <div class="fw-medium">${config.label}</div>
+              <div class="small text-muted">${remainingLabel}: ${remainingText}</div>
+            </div>
+            <div class="text-end">
+              <div>${toFixedDisplay(value, config.unit)} ${config.unit}</div>
+              <div class="small ${statusClass}">${statusIcon} ${statusPass ? 'Pass' : 'Fail'}</div>
+            </div>
           </div>
-          <div class="text-end">
-            <div>${toFixedDisplay(value, config.unit)} ${config.unit}</div>
-            <div class="small ${statusClass}">${statusIcon} ${statusPass ? 'Pass' : 'Fail'}</div>
+          <div class="progress totals-progress mt-2" role="progressbar" aria-label="${config.label} progress" aria-valuenow="${Math.round(progress)}" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar ${progressClass}" style="width: ${progress}%"></div>
           </div>
         </div>
       `;
