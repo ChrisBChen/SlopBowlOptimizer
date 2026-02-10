@@ -41,3 +41,77 @@ body {
     position: static;
   }
 }
+
+
+.header-controls {
+  row-gap: 0.35rem;
+}
+
+#restaurantSelect {
+  width: auto;
+}
+
+@media (max-width: 575.98px) {
+  .header-controls {
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+
+  #restaurantSelect {
+    min-width: 0;
+    flex: 1 1 180px;
+  }
+}
+
+.portion-group .btn:disabled,
+.portion-group .btn.disabled {
+  background-color: var(--bs-gray-300);
+  border-color: var(--bs-gray-400);
+  color: var(--bs-gray-600);
+  opacity: 1;
+}
+
+.ingredient-nutrient-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+
+.nutrient-pill {
+  font-size: 0.72rem;
+  line-height: 1;
+  padding: 0.35rem 0.45rem;
+  border-radius: 999px;
+  color: #212529;
+}
+
+.nutrient-pill.calories {
+  background-color: #ffe69c;
+}
+
+.nutrient-pill.fat {
+  background-color: #ffd8a8;
+}
+
+.nutrient-pill.cholesterol {
+  background-color: #cfe2ff;
+}
+
+.nutrient-pill.sodium {
+  background-color: #d1e7dd;
+}
+
+.totals-row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.65rem 0;
+}
+
+.totals-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.totals-progress {
+  height: 0.45rem;
+}
