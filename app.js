@@ -350,7 +350,7 @@ function renderIngredients() {
           </h2>
           <div
             id="collapse-${categoryId}"
-            class="accordion-collapse collapse ${index === 0 ? 'show' : ''}"
+            class="accordion-collapse collapse ${isOpen ? 'show' : ''}"
             aria-labelledby="heading-${categoryId}"
             data-bs-parent="#ingredientsAccordion"
           >
@@ -467,6 +467,11 @@ function handleIngredientClick(event) {
     return;
   }
 
+  const ingredient = flattenIngredients(restaurant).find((item) => item.id === ingredientId);
+  if (ingredient && CATEGORY_ORDER.includes(ingredient.categoryId)) {
+    state.openCategoryId = ingredient.categoryId;
+  }
+
   state.portions[ingredientId] = portion;
   renderIngredients();
   renderTotals();
@@ -556,6 +561,9 @@ function attachListeners() {
           return;
         }
         state.portions = nextState.portions;
+        if (CATEGORY_ORDER.includes(categoryId)) {
+          state.openCategoryId = categoryId;
+        }
         renderIngredients();
         renderTotals();
         renderOrderSummary();
@@ -572,11 +580,11 @@ function attachListeners() {
     filterCategory(event.target.dataset.categoryId, event.target.value);
   });
 
-  elements.ingredientsAccordion.addEventListener('click', (event) => {
-    const trigger = event.target.closest('.accordion-button[data-category-id]');
-    if (!trigger) return;
+  elements.ingredientsAccordion.addEventListener('shown.bs.collapse', (event) => {
+    const categoryId = event.target.id?.replace('collapse-cat-', '');
+    if (!categoryId || !CATEGORY_ORDER.includes(categoryId)) return;
 
-    state.openCategoryId = trigger.dataset.categoryId;
+    state.openCategoryId = categoryId;
     encodeStateToUrl(state);
   });
 }
