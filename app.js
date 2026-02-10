@@ -467,6 +467,11 @@ function handleIngredientClick(event) {
     return;
   }
 
+  const ingredient = flattenIngredients(restaurant).find((item) => item.id === ingredientId);
+  if (ingredient && CATEGORY_ORDER.includes(ingredient.categoryId)) {
+    state.openCategoryId = ingredient.categoryId;
+  }
+
   state.portions[ingredientId] = portion;
   renderIngredients();
   renderTotals();
@@ -556,6 +561,9 @@ function attachListeners() {
           return;
         }
         state.portions = nextState.portions;
+        if (CATEGORY_ORDER.includes(categoryId)) {
+          state.openCategoryId = categoryId;
+        }
         renderIngredients();
         renderTotals();
         renderOrderSummary();
