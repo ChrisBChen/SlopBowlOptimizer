@@ -1,101 +1,560 @@
 {
   "restaurants": [
     {
-      "id": "grain-grove",
-      "name": "Grain Grove",
+      "id": "sweetgreen",
+      "name": "Sweetgreen",
       "categories": [
         {
           "id": "base",
           "label": "Base",
           "ingredients": [
-            { "id": "gg-brown-rice", "name": "Brown Rice", "calories": 210, "total_fat_g": 1.7, "sat_fat_g": 0.3, "cholesterol_mg": 0, "sodium_mg": 10, "sugar_g": 0.8, "fiber_g": 3.5, "protein_g": 4.9 },
-            { "id": "gg-quinoa", "name": "Quinoa", "calories": 220, "total_fat_g": 3.6, "sat_fat_g": 0.4, "cholesterol_mg": 0, "sodium_mg": 15, "sugar_g": 1.6, "fiber_g": 5.2, "protein_g": 8.1 },
-            { "id": "gg-romaine", "name": "Romaine + Greens", "calories": 25, "total_fat_g": 0.4, "sat_fat_g": 0.1, "cholesterol_mg": 0, "sodium_mg": 30, "sugar_g": 1.2, "fiber_g": 2.3, "protein_g": 1.8 }
+            { "id": "sg-arugula", "name": "Arugula", "calories": 15, "total_fat_g": 1.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 15, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "sg-baby-spinach", "name": "Baby Spinach", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 40, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "sg-romaine", "name": "Chopped Romaine", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 5, "sugar_g": 1.0, "fiber_g": 2.0, "protein_g": 1.0 },
+            { "id": "sg-kale", "name": "Shredded Kale", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 15, "sugar_g": 1.0, "fiber_g": 2.0, "protein_g": 2.0 },
+            { "id": "sg-spring-mix", "name": "Spring Mix", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-herbed-quinoa", "name": "Herbed Quinoa", "calories": 130, "total_fat_g": 3.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 340, "sugar_g": 1.0, "fiber_g": 3.0, "protein_g": 5.0 },
+            { "id": "sg-wild-rice", "name": "Wild Rice", "calories": 155, "total_fat_g": 2.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 150, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 3.0 },
+            { "id": "sg-white-rice", "name": "White Rice", "calories": 120, "total_fat_g": 1.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 130, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 2.0 }
           ]
         },
         {
           "id": "proteins",
           "label": "Proteins",
           "ingredients": [
-            { "id": "gg-chicken", "name": "Herb Chicken", "calories": 180, "total_fat_g": 7.2, "sat_fat_g": 2.0, "cholesterol_mg": 85, "sodium_mg": 390, "sugar_g": 0.5, "fiber_g": 0, "protein_g": 28 },
-            { "id": "gg-tofu", "name": "Sesame Tofu", "calories": 140, "total_fat_g": 8.4, "sat_fat_g": 1.1, "cholesterol_mg": 0, "sodium_mg": 240, "sugar_g": 1.3, "fiber_g": 1.7, "protein_g": 15 },
-            { "id": "gg-steak", "name": "Sliced Steak", "calories": 210, "total_fat_g": 11.5, "sat_fat_g": 4.2, "cholesterol_mg": 95, "sodium_mg": 310, "sugar_g": 0, "fiber_g": 0, "protein_g": 25 }
+            { "id": "sg-blackened-chicken", "name": "Blackened Chicken", "calories": 140, "total_fat_g": 6.0, "sat_fat_g": 2.0, "cholesterol_mg": 99, "sodium_mg": 334, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 21.0 },
+            { "id": "sg-herb-chicken", "name": "Herb Roasted Chicken", "calories": 290, "total_fat_g": 14.0, "sat_fat_g": 3.0, "cholesterol_mg": 170, "sodium_mg": 730, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 36.0 },
+            { "id": "sg-roasted-chicken", "name": "Roasted Chicken", "calories": 110, "total_fat_g": 2.0, "sat_fat_g": 0.0, "cholesterol_mg": 58, "sodium_mg": 254, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 21.0 },
+            { "id": "sg-miso-salmon", "name": "Miso Glazed Salmon", "calories": 290, "total_fat_g": 15.0, "sat_fat_g": 4.0, "cholesterol_mg": 60, "sodium_mg": 490, "sugar_g": 11.0, "fiber_g": 0.0, "protein_g": 24.0 },
+            { "id": "sg-miso-steelhead", "name": "Miso Glazed Steelhead", "calories": 200, "total_fat_g": 8.0, "sat_fat_g": 2.0, "cholesterol_mg": 65, "sodium_mg": 490, "sugar_g": 7.0, "fiber_g": 0.0, "protein_g": 24.0 },
+            { "id": "sg-roasted-tofu", "name": "Roasted Tofu", "calories": 100, "total_fat_g": 7.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 250, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 7.0 },
+            { "id": "sg-salami", "name": "Salami", "calories": 100, "total_fat_g": 7.0, "sat_fat_g": 3.0, "cholesterol_mg": 25, "sodium_mg": 430, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 8.0 }
           ]
         },
         {
           "id": "toppings",
           "label": "Toppings",
           "ingredients": [
-            { "id": "gg-black-beans", "name": "Black Beans", "calories": 120, "total_fat_g": 0.6, "sat_fat_g": 0.1, "cholesterol_mg": 0, "sodium_mg": 130, "sugar_g": 0.4, "fiber_g": 7.5, "protein_g": 8.2 },
-            { "id": "gg-corn", "name": "Charred Corn", "calories": 80, "total_fat_g": 1.2, "sat_fat_g": 0.2, "cholesterol_mg": 0, "sodium_mg": 90, "sugar_g": 4.1, "fiber_g": 2.9, "protein_g": 2.6 },
-            { "id": "gg-pico", "name": "Pico de Gallo", "calories": 30, "total_fat_g": 0.2, "sat_fat_g": 0, "cholesterol_mg": 0, "sodium_mg": 170, "sugar_g": 2.4, "fiber_g": 1.1, "protein_g": 0.9 }
+            { "id": "sg-apples", "name": "Apples", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 3.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "sg-basil", "name": "Basil", "calories": 0, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-black-beans", "name": "Black Beans", "calories": 70, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 135, "sugar_g": 0.0, "fiber_g": 5.0, "protein_g": 5.0 },
+            { "id": "sg-chickpeas", "name": "Chickpeas", "calories": 45, "total_fat_g": 2.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 250, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "sg-cilantro", "name": "Cilantro", "calories": 0, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-crispy-rice", "name": "Crispy Rice", "calories": 80, "total_fat_g": 2.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 260, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "sg-crispy-onions", "name": "Crispy Onions", "calories": 40, "total_fat_g": 3.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 30, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-cucumbers", "name": "Cucumbers", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-nori-sesame", "name": "Nori Sesame Seasoning", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 35, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "sg-olives", "name": "Olives", "calories": 40, "total_fat_g": 4.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 250, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-pickled-onions", "name": "Pickled Onions", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 257, "sugar_g": 4.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-carrots", "name": "Raw Carrots", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 15, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "sg-pecans", "name": "Raw Pecans", "calories": 90, "total_fat_g": 9.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "sg-red-onions", "name": "Red Onions", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-roasted-almonds", "name": "Roasted Almonds", "calories": 80, "total_fat_g": 6.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 2.0, "protein_g": 3.0 },
+            { "id": "sg-roasted-sweet-potatoes", "name": "Roasted Sweet Potatoes", "calories": 65, "total_fat_g": 1.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 301, "sugar_g": 7.0, "fiber_g": 2.0, "protein_g": 1.0 },
+            { "id": "sg-shredded-cabbage", "name": "Shredded Cabbage", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 5, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "sg-spicy-broccoli", "name": "Spicy Broccoli", "calories": 25, "total_fat_g": 1.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 120, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "sg-banana-peppers", "name": "Spicy Banana Peppers", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 729, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "sg-tomatoes", "name": "Tomatoes", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 10, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "sg-tortilla-chips", "name": "Tortilla Chips", "calories": 80, "total_fat_g": 4.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 10, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "sg-zaatar-breadcrumbs", "name": "Za'atar Breadcrumbs", "calories": 65, "total_fat_g": 2.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 201, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 3.0 }
           ]
         },
         {
           "id": "sauces",
           "label": "Sauces",
           "ingredients": [
-            { "id": "gg-chipotle-ranch", "name": "Chipotle Ranch", "calories": 130, "total_fat_g": 13, "sat_fat_g": 2.1, "cholesterol_mg": 15, "sodium_mg": 260, "sugar_g": 1.5, "fiber_g": 0, "protein_g": 0.5 },
-            { "id": "gg-lemon-tahini", "name": "Lemon Tahini", "calories": 110, "total_fat_g": 9.5, "sat_fat_g": 1.4, "cholesterol_mg": 0, "sodium_mg": 190, "sugar_g": 1.2, "fiber_g": 1.3, "protein_g": 2.1 },
-            { "id": "gg-salsa-verde", "name": "Salsa Verde", "calories": 25, "total_fat_g": 0.1, "sat_fat_g": 0, "cholesterol_mg": 0, "sodium_mg": 180, "sugar_g": 1.3, "fiber_g": 0.7, "protein_g": 0.4 }
+            { "id": "sg-balsamic-vinegar", "name": "Balsamic Vinegar", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 2.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-balsamic-vinaigrette", "name": "Balsamic Vinaigrette", "calories": 150, "total_fat_g": 14.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 210, "sugar_g": 3.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-caesar-dressing", "name": "Caesar Dressing", "calories": 100, "total_fat_g": 10.0, "sat_fat_g": 1.0, "cholesterol_mg": 10, "sodium_mg": 330, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "sg-chipotle-crema", "name": "Chipotle Crema", "calories": 40, "total_fat_g": 4.0, "sat_fat_g": 2.0, "cholesterol_mg": 10, "sodium_mg": 30, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-crushed-red-pepper", "name": "Crushed Red Pepper", "calories": 0, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-olive-oil", "name": "Extra Virgin Olive Oil", "calories": 130, "total_fat_g": 14.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-green-goddess", "name": "Green Goddess Ranch", "calories": 145, "total_fat_g": 15.0, "sat_fat_g": 3.0, "cholesterol_mg": 10, "sodium_mg": 300, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "sg-honey-bbq", "name": "Honey BBQ Sauce", "calories": 40, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 225, "sugar_g": 8.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-hot-honey-mustard", "name": "Hot Honey Mustard Sauce", "calories": 120, "total_fat_g": 10.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 240, "sugar_g": 4.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-lemon-squeeze", "name": "Lemon Squeeze", "calories": 0, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-lime-cilantro-vin", "name": "Lime Cilantro Jalapeño Vinaigrette", "calories": 110, "total_fat_g": 12.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 50, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-lime-squeeze", "name": "Lime Squeeze", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-miso-sesame", "name": "Miso Sesame Ginger", "calories": 120, "total_fat_g": 12.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 200, "sugar_g": 2.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "sg-pesto-vinaigrette", "name": "Pesto Vinaigrette", "calories": 85, "total_fat_g": 9.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 125, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-red-wine-vin", "name": "Red Wine Vinaigrette", "calories": 140, "total_fat_g": 15.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 330, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "sg-spicy-cashew", "name": "Spicy Cashew Dressing", "calories": 100, "total_fat_g": 9.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 200, "sugar_g": 2.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "sg-hot-sauce", "name": "Sweetgreen Hot Sauce", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 170, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "sg-umami-seasoning", "name": "Umami Seasoning", "calories": 0, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 65, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 }
           ]
         },
         {
           "id": "extras",
           "label": "Extras",
           "ingredients": [
-            { "id": "gg-avocado", "name": "Avocado", "calories": 120, "total_fat_g": 11, "sat_fat_g": 1.6, "cholesterol_mg": 0, "sodium_mg": 8, "sugar_g": 0.2, "fiber_g": 5.4, "protein_g": 1.5 },
-            { "id": "gg-feta", "name": "Feta Crumbles", "calories": 80, "total_fat_g": 6.5, "sat_fat_g": 4.1, "cholesterol_mg": 25, "sodium_mg": 320, "sugar_g": 1.1, "fiber_g": 0, "protein_g": 4.2 }
+            { "id": "sg-avocado", "name": "Avocado", "calories": 160, "total_fat_g": 13.0, "sat_fat_g": 3.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 9.0, "protein_g": 3.0 },
+            { "id": "sg-blue-cheese", "name": "Blue Cheese", "calories": 110, "total_fat_g": 9.0, "sat_fat_g": 6.0, "cholesterol_mg": 25, "sodium_mg": 340, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 6.0 },
+            { "id": "sg-goat-cheese", "name": "Goat Cheese", "calories": 90, "total_fat_g": 7.0, "sat_fat_g": 5.0, "cholesterol_mg": 15, "sodium_mg": 160, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 7.0 },
+            { "id": "sg-egg", "name": "Hard Boiled Egg", "calories": 70, "total_fat_g": 5.0, "sat_fat_g": 2.0, "cholesterol_mg": 190, "sodium_mg": 70, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 7.0 },
+            { "id": "sg-hummus", "name": "Hummus", "calories": 80, "total_fat_g": 5.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 180, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 4.0 },
+            { "id": "sg-parmesan-crisps", "name": "Parmesan Crisps", "calories": 100, "total_fat_g": 8.0, "sat_fat_g": 5.0, "cholesterol_mg": 25, "sodium_mg": 480, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 6.0 },
+            { "id": "sg-roasted-corn-veg", "name": "Roasted Corn + Fajita Veggies", "calories": 70, "total_fat_g": 2.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 180, "sugar_g": 3.0, "fiber_g": 1.0, "protein_g": 2.0 },
+            { "id": "sg-shaved-parmesan", "name": "Shaved Parmesan", "calories": 45, "total_fat_g": 4.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 150, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 3.0 },
+            { "id": "sg-portobello", "name": "Warm Portobello Mix", "calories": 110, "total_fat_g": 8.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 498, "sugar_g": 0.0, "fiber_g": 3.0, "protein_g": 5.0 },
+            { "id": "sg-warm-sweet-potatoes", "name": "Warm Roasted Sweet Potatoes", "calories": 85, "total_fat_g": 2.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 220, "sugar_g": 2.0, "fiber_g": 2.0, "protein_g": 2.0 },
+            { "id": "sg-veg-slaw", "name": "Veg Slaw", "calories": 60, "total_fat_g": 5.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 190, "sugar_g": 2.0, "fiber_g": 1.0, "protein_g": 1.0 }
           ]
         }
       ]
     },
     {
-      "id": "urban-harvest",
-      "name": "Urban Harvest Bowls",
+      "id": "cava",
+      "name": "CAVA",
       "categories": [
         {
           "id": "base",
           "label": "Base",
           "ingredients": [
-            { "id": "uh-cauliflower-rice", "name": "Cauliflower Rice", "calories": 40, "total_fat_g": 0.6, "sat_fat_g": 0.1, "cholesterol_mg": 0, "sodium_mg": 40, "sugar_g": 2.3, "fiber_g": 2.4, "protein_g": 2.2 },
-            { "id": "uh-jasmine-rice", "name": "Jasmine Rice", "calories": 230, "total_fat_g": 0.5, "sat_fat_g": 0.1, "cholesterol_mg": 0, "sodium_mg": 5, "sugar_g": 0.1, "fiber_g": 0.7, "protein_g": 4.2 },
-            { "id": "uh-kale", "name": "Shredded Kale", "calories": 35, "total_fat_g": 0.7, "sat_fat_g": 0.1, "cholesterol_mg": 0, "sodium_mg": 45, "sugar_g": 1.5, "fiber_g": 2.6, "protein_g": 2.4 }
+            { "id": "cava-brown-rice", "name": "Brown Rice", "calories": 310, "total_fat_g": 10.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 770, "sugar_g": 2.0, "fiber_g": 4.0, "protein_g": 7.0 },
+            { "id": "cava-saffron-rice", "name": "Saffron Basmati Rice", "calories": 290, "total_fat_g": 7.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 770, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 5.0 },
+            { "id": "cava-black-lentils", "name": "Black Lentils", "calories": 270, "total_fat_g": 7.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 520, "sugar_g": 3.0, "fiber_g": 15.0, "protein_g": 18.0 },
+            { "id": "cava-supergreens", "name": "SuperGreens", "calories": 40, "total_fat_g": 0.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 30, "sugar_g": 3.0, "fiber_g": 4.0, "protein_g": 3.0 },
+            { "id": "cava-arugula", "name": "Arugula", "calories": 20, "total_fat_g": 0.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 25, "sugar_g": 2.0, "fiber_g": 1.0, "protein_g": 2.0 },
+            { "id": "cava-spinach", "name": "Baby Spinach", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 70, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 3.0 },
+            { "id": "cava-romaine", "name": "Romaine", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 10, "sugar_g": 1.0, "fiber_g": 3.0, "protein_g": 1.0 },
+            { "id": "cava-splendid-greens", "name": "SplendidGreens", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 20, "sugar_g": 1.0, "fiber_g": 3.0, "protein_g": 1.0 }
           ]
         },
         {
           "id": "proteins",
           "label": "Proteins",
           "ingredients": [
-            { "id": "uh-salmon", "name": "Roasted Salmon", "calories": 240, "total_fat_g": 14, "sat_fat_g": 3.2, "cholesterol_mg": 80, "sodium_mg": 220, "sugar_g": 0, "fiber_g": 0, "protein_g": 26 },
-            { "id": "uh-turkey", "name": "Smoked Turkey", "calories": 160, "total_fat_g": 5.5, "sat_fat_g": 1.6, "cholesterol_mg": 68, "sodium_mg": 420, "sugar_g": 1.1, "fiber_g": 0, "protein_g": 24 },
-            { "id": "uh-tempeh", "name": "Teriyaki Tempeh", "calories": 190, "total_fat_g": 9.8, "sat_fat_g": 1.9, "cholesterol_mg": 0, "sodium_mg": 290, "sugar_g": 4.4, "fiber_g": 3.2, "protein_g": 17 }
+            { "id": "cava-braised-lamb", "name": "Braised Lamb", "calories": 210, "total_fat_g": 12.0, "sat_fat_g": 6.0, "cholesterol_mg": 65, "sodium_mg": 450, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 24.0 },
+            { "id": "cava-grilled-chicken", "name": "Grilled Chicken", "calories": 250, "total_fat_g": 13.0, "sat_fat_g": 3.0, "cholesterol_mg": 150, "sodium_mg": 670, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 28.0 },
+            { "id": "cava-falafel", "name": "Falafel", "calories": 350, "total_fat_g": 26.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 810, "sugar_g": 3.0, "fiber_g": 1.0, "protein_g": 6.0 },
+            { "id": "cava-grilled-steak", "name": "Grilled Steak", "calories": 170, "total_fat_g": 9.0, "sat_fat_g": 3.0, "cholesterol_mg": 85, "sodium_mg": 280, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 23.0 },
+            { "id": "cava-harissa-honey-chicken", "name": "Harissa Honey Chicken", "calories": 260, "total_fat_g": 14.0, "sat_fat_g": 3.0, "cholesterol_mg": 135, "sodium_mg": 670, "sugar_g": 3.0, "fiber_g": 2.0, "protein_g": 26.0 },
+            { "id": "cava-roasted-vegetables", "name": "Roasted Vegetables", "calories": 100, "total_fat_g": 4.5, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 600, "sugar_g": 5.0, "fiber_g": 5.0, "protein_g": 3.0 },
+            { "id": "cava-lamb-meatballs", "name": "Spicy Lamb Meatballs", "calories": 300, "total_fat_g": 21.0, "sat_fat_g": 8.0, "cholesterol_mg": 90, "sodium_mg": 680, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 24.0 },
+            { "id": "cava-chicken-shawarma", "name": "Chicken Shawarma", "calories": 100, "total_fat_g": 3.0, "sat_fat_g": 0.5, "cholesterol_mg": 50, "sodium_mg": 460, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 16.0 }
           ]
         },
         {
           "id": "toppings",
           "label": "Toppings",
           "ingredients": [
-            { "id": "uh-edamame", "name": "Edamame", "calories": 100, "total_fat_g": 4.2, "sat_fat_g": 0.6, "cholesterol_mg": 0, "sodium_mg": 95, "sugar_g": 2.2, "fiber_g": 4.8, "protein_g": 9.1 },
-            { "id": "uh-pickled-onion", "name": "Pickled Onion", "calories": 20, "total_fat_g": 0, "sat_fat_g": 0, "cholesterol_mg": 0, "sodium_mg": 160, "sugar_g": 2.9, "fiber_g": 0.6, "protein_g": 0.2 },
-            { "id": "uh-cucumber", "name": "Cucumber", "calories": 15, "total_fat_g": 0.1, "sat_fat_g": 0, "cholesterol_mg": 0, "sodium_mg": 5, "sugar_g": 1.7, "fiber_g": 0.5, "protein_g": 0.7 }
+            { "id": "cava-romaine-shred", "name": "Shredded Romaine", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "cava-pita-crisps", "name": "Pita Crisps", "calories": 70, "total_fat_g": 11.0, "sat_fat_g": 1.5, "cholesterol_mg": 0, "sodium_mg": 25, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "cava-cabbage-slaw", "name": "Cabbage Slaw", "calories": 35, "total_fat_g": 3.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 125, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "cava-tomato-onion", "name": "Tomato + Onion", "calories": 20, "total_fat_g": 1.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 125, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "cava-cucumber", "name": "Persian Cucumber", "calories": 15, "total_fat_g": 1.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 110, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "cava-tomato-cucumber", "name": "Tomato + Cucumber Salad", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "cava-olives", "name": "Kalamata Olives", "calories": 35, "total_fat_g": 3.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 360, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 0.0 },
+            { "id": "cava-fiery-broccoli", "name": "Fiery Broccoli", "calories": 35, "total_fat_g": 2.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 170, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "cava-pickled-onions", "name": "Pickled Onions", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 4.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "cava-pickles", "name": "Salt-Brined Pickles", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 180, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "cava-feta", "name": "Crumbled Feta", "calories": 35, "total_fat_g": 2.5, "sat_fat_g": 1.5, "cholesterol_mg": 10, "sodium_mg": 125, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 3.0 },
+            { "id": "cava-corn", "name": "Fire-Roasted Corn", "calories": 45, "total_fat_g": 2.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 105, "sugar_g": 2.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "cava-tzatziki", "name": "Tzatziki", "calories": 35, "total_fat_g": 2.5, "sat_fat_g": 1.5, "cholesterol_mg": 10, "sodium_mg": 60, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "cava-hummus", "name": "Hummus", "calories": 45, "total_fat_g": 2.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 115, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 2.0 },
+            { "id": "cava-roasted-eggplant", "name": "Roasted Eggplant Dip", "calories": 50, "total_fat_g": 5.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 160, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "cava-crazy-feta", "name": "Crazy Feta", "calories": 70, "total_fat_g": 6.0, "sat_fat_g": 3.0, "cholesterol_mg": 15, "sodium_mg": 230, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 4.0 },
+            { "id": "cava-red-pepper-hummus", "name": "Red Pepper Hummus", "calories": 40, "total_fat_g": 1.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 125, "sugar_g": 1.0, "fiber_g": 2.0, "protein_g": 2.0 },
+            { "id": "cava-harissa", "name": "Harissa", "calories": 30, "total_fat_g": 2.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 120, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 0.0 }
           ]
         },
         {
           "id": "sauces",
           "label": "Sauces",
           "ingredients": [
-            { "id": "uh-ginger-soy", "name": "Ginger Soy", "calories": 45, "total_fat_g": 1.4, "sat_fat_g": 0.2, "cholesterol_mg": 0, "sodium_mg": 340, "sugar_g": 4.8, "fiber_g": 0.3, "protein_g": 1.3 },
-            { "id": "uh-spicy-yogurt", "name": "Spicy Yogurt", "calories": 70, "total_fat_g": 4.8, "sat_fat_g": 1.9, "cholesterol_mg": 12, "sodium_mg": 170, "sugar_g": 3.7, "fiber_g": 0, "protein_g": 3.5 },
-            { "id": "uh-herb-vinaigrette", "name": "Herb Vinaigrette", "calories": 95, "total_fat_g": 9.1, "sat_fat_g": 1.1, "cholesterol_mg": 0, "sodium_mg": 140, "sugar_g": 1.9, "fiber_g": 0.2, "protein_g": 0.1 }
+            { "id": "cava-balsamic-date-vin", "name": "Balsamic Date Vinaigrette", "calories": 60, "total_fat_g": 4.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 250, "sugar_g": 5.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "cava-yogurt-dill", "name": "Yogurt Dill Dressing", "calories": 30, "total_fat_g": 2.0, "sat_fat_g": 1.0, "cholesterol_mg": 5, "sodium_mg": 190, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "cava-lemon-herb-tahini", "name": "Lemon Herb Tahini", "calories": 70, "total_fat_g": 6.0, "sat_fat_g": 1.5, "cholesterol_mg": 0, "sodium_mg": 180, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "cava-tahini-caesar", "name": "Tahini Caesar Dressing", "calories": 90, "total_fat_g": 8.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 250, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "cava-greek-vinaigrette", "name": "Greek Vinaigrette", "calories": 130, "total_fat_g": 14.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 380, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "cava-skhug", "name": "Skhug", "calories": 80, "total_fat_g": 9.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 150, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "cava-harissa-vinaigrette", "name": "Hot Harissa Vinaigrette", "calories": 70, "total_fat_g": 7.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 270, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "cava-garlic-dressing", "name": "Garlic Dressing", "calories": 180, "total_fat_g": 20.0, "sat_fat_g": 1.5, "cholesterol_mg": 0, "sodium_mg": 90, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 }
           ]
         },
         {
           "id": "extras",
           "label": "Extras",
           "ingredients": [
-            { "id": "uh-almond-crunch", "name": "Almond Crunch", "calories": 90, "total_fat_g": 7.3, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 70, "sugar_g": 1.4, "fiber_g": 2.7, "protein_g": 3.2 },
-            { "id": "uh-crispy-shallots", "name": "Crispy Shallots", "calories": 60, "total_fat_g": 4.6, "sat_fat_g": 0.7, "cholesterol_mg": 0, "sodium_mg": 110, "sugar_g": 0.8, "fiber_g": 0.9, "protein_g": 0.6 }
+            { "id": "cava-avocado", "name": "Avocado", "calories": 110, "total_fat_g": 11.0, "sat_fat_g": 2.5, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 5.0, "protein_g": 2.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chipotle",
+      "name": "Chipotle",
+      "categories": [
+        {
+          "id": "base",
+          "label": "Base",
+          "ingredients": [
+            { "id": "chipotle-white-rice", "name": "Cilantro-Lime White Rice", "calories": 210, "total_fat_g": 4.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 350, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 4.0 },
+            { "id": "chipotle-brown-rice", "name": "Cilantro-Lime Brown Rice", "calories": 210, "total_fat_g": 6.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 190, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 4.0 },
+            { "id": "chipotle-romaine", "name": "Romaine Lettuce (Salad Base)", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 0.0 }
+          ]
+        },
+        {
+          "id": "proteins",
+          "label": "Proteins",
+          "ingredients": [
+            { "id": "chipotle-barbacoa", "name": "Barbacoa", "calories": 170, "total_fat_g": 7.0, "sat_fat_g": 2.5, "cholesterol_mg": 65, "sodium_mg": 530, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 24.0 },
+            { "id": "chipotle-chicken", "name": "Chicken", "calories": 180, "total_fat_g": 7.0, "sat_fat_g": 3.0, "cholesterol_mg": 125, "sodium_mg": 310, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 32.0 },
+            { "id": "chipotle-carnitas", "name": "Carnitas", "calories": 210, "total_fat_g": 12.0, "sat_fat_g": 7.0, "cholesterol_mg": 65, "sodium_mg": 450, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 23.0 },
+            { "id": "chipotle-steak", "name": "Steak", "calories": 150, "total_fat_g": 6.0, "sat_fat_g": 2.5, "cholesterol_mg": 80, "sodium_mg": 330, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 21.0 },
+            { "id": "chipotle-sofritas", "name": "Sofritas (Tofu)", "calories": 150, "total_fat_g": 10.0, "sat_fat_g": 1.5, "cholesterol_mg": 0, "sodium_mg": 560, "sugar_g": 5.0, "fiber_g": 3.0, "protein_g": 8.0 }
+          ]
+        },
+        {
+          "id": "toppings",
+          "label": "Toppings",
+          "ingredients": [
+            { "id": "chipotle-black-beans", "name": "Black Beans", "calories": 130, "total_fat_g": 1.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 210, "sugar_g": 2.0, "fiber_g": 7.0, "protein_g": 8.0 },
+            { "id": "chipotle-pinto-beans", "name": "Pinto Beans", "calories": 130, "total_fat_g": 1.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 210, "sugar_g": 1.0, "fiber_g": 8.0, "protein_g": 8.0 },
+            { "id": "chipotle-fajita-veggies", "name": "Fajita Vegetables", "calories": 20, "total_fat_g": 1.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 150, "sugar_g": 2.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "chipotle-tomato-salsa", "name": "Fresh Tomato Salsa", "calories": 25, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 550, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "chipotle-corn-salsa", "name": "Roasted Chili-Corn Salsa", "calories": 80, "total_fat_g": 1.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 330, "sugar_g": 4.0, "fiber_g": 3.0, "protein_g": 3.0 },
+            { "id": "chipotle-green-salsa", "name": "Tomatillo Green Chili Salsa", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 260, "sugar_g": 2.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "chipotle-red-salsa", "name": "Tomatillo Red Chili Salsa", "calories": 30, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 500, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "chipotle-cheese", "name": "Monterey Jack Cheese", "calories": 110, "total_fat_g": 8.0, "sat_fat_g": 5.0, "cholesterol_mg": 30, "sodium_mg": 190, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 6.0 },
+            { "id": "chipotle-sour-cream", "name": "Sour Cream", "calories": 110, "total_fat_g": 9.0, "sat_fat_g": 7.0, "cholesterol_mg": 40, "sodium_mg": 30, "sugar_g": 2.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "chipotle-queso", "name": "Queso Blanco", "calories": 120, "total_fat_g": 9.0, "sat_fat_g": 6.0, "cholesterol_mg": 30, "sodium_mg": 250, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 5.0 }
+          ]
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces",
+          "ingredients": [
+            { "id": "chipotle-honey-vinaigrette", "name": "Chipotle-Honey Vinaigrette", "calories": 220, "total_fat_g": 16.0, "sat_fat_g": 2.5, "cholesterol_mg": 0, "sodium_mg": 850, "sugar_g": 12.0, "fiber_g": 1.0, "protein_g": 1.0 }
+          ]
+        },
+        {
+          "id": "extras",
+          "label": "Extras",
+          "ingredients": [
+            { "id": "chipotle-guacamole", "name": "Guacamole", "calories": 230, "total_fat_g": 22.0, "sat_fat_g": 3.5, "cholesterol_mg": 0, "sodium_mg": 370, "sugar_g": 1.0, "fiber_g": 6.0, "protein_g": 2.0 },
+            { "id": "chipotle-queso-side", "name": "Side Queso Blanco", "calories": 240, "total_fat_g": 18.0, "sat_fat_g": 12.0, "cholesterol_mg": 60, "sodium_mg": 490, "sugar_g": 2.0, "fiber_g": 0.0, "protein_g": 10.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naya",
+      "name": "NAYA",
+      "categories": [
+        {
+          "id": "base",
+          "label": "Base",
+          "ingredients": [
+            { "id": "naya-white-pita", "name": "White Pita", "calories": 300, "total_fat_g": 2.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 530, "sugar_g": 4.0, "fiber_g": 2.0, "protein_g": 10.0 },
+            { "id": "naya-wheat-pita", "name": "Whole Wheat Pita", "calories": 230, "total_fat_g": 4.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 370, "sugar_g": 3.0, "fiber_g": 7.0, "protein_g": 13.0 },
+            { "id": "naya-romaine", "name": "Romaine Lettuce", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 10, "sugar_g": 2.0, "fiber_g": 3.0, "protein_g": 2.0 },
+            { "id": "naya-seasonal-greens", "name": "Seasonal Greens", "calories": 25, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 50, "sugar_g": 2.0, "fiber_g": 2.0, "protein_g": 2.0 },
+            { "id": "naya-quinoa", "name": "Organic Quinoa", "calories": 210, "total_fat_g": 4.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 480, "sugar_g": 0.0, "fiber_g": 3.0, "protein_g": 7.0 },
+            { "id": "naya-vermicelli-rice", "name": "Vermicelli Rice", "calories": 230, "total_fat_g": 5.0, "sat_fat_g": 2.5, "cholesterol_mg": 10, "sodium_mg": 210, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 5.0 }
+          ]
+        },
+        {
+          "id": "proteins",
+          "label": "Proteins",
+          "ingredients": [
+            { "id": "naya-beef-shawarma", "name": "Beef Shawarma", "calories": 190, "total_fat_g": 7.0, "sat_fat_g": 3.0, "cholesterol_mg": 90, "sodium_mg": 430, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 30.0 },
+            { "id": "naya-cauliflower", "name": "Roasted Cauliflower", "calories": 120, "total_fat_g": 11.0, "sat_fat_g": 1.5, "cholesterol_mg": 0, "sodium_mg": 40, "sugar_g": 2.0, "fiber_g": 3.0, "protein_g": 2.0 },
+            { "id": "naya-chicken-shawarma", "name": "Chicken Shawarma", "calories": 190, "total_fat_g": 11.0, "sat_fat_g": 2.5, "cholesterol_mg": 115, "sodium_mg": 280, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 23.0 },
+            { "id": "naya-falafel", "name": "Falafel", "calories": 220, "total_fat_g": 11.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 590, "sugar_g": 0.0, "fiber_g": 22.0, "protein_g": 12.0 },
+            { "id": "naya-chicken-kebab", "name": "Chicken Kebab", "calories": 150, "total_fat_g": 7.0, "sat_fat_g": 0.0, "cholesterol_mg": 60, "sodium_mg": 410, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 20.0 },
+            { "id": "naya-lamb-kebab", "name": "Kafta Lamb Kebab", "calories": 270, "total_fat_g": 20.0, "sat_fat_g": 8.0, "cholesterol_mg": 75, "sodium_mg": 530, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 18.0 }
+          ]
+        },
+        {
+          "id": "toppings",
+          "label": "Toppings",
+          "ingredients": [
+            { "id": "naya-baba-ghannouj", "name": "Baba Ghannouj", "calories": 70, "total_fat_g": 4.5, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 280, "sugar_g": 2.0, "fiber_g": 2.0, "protein_g": 2.0 },
+            { "id": "naya-feta", "name": "Feta Cheese", "calories": 70, "total_fat_g": 6.0, "sat_fat_g": 4.0, "cholesterol_mg": 25, "sodium_mg": 260, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 4.0 },
+            { "id": "naya-cucumbers", "name": "Cucumbers", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "naya-cabbage-slaw", "name": "Cabbage Slaw", "calories": 60, "total_fat_g": 6.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 140, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "naya-hummus", "name": "Hummus", "calories": 140, "total_fat_g": 9.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 270, "sugar_g": 1.0, "fiber_g": 2.0, "protein_g": 4.0 },
+            { "id": "naya-jalapenos", "name": "Jalapeños", "calories": 0, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "naya-olives", "name": "Kalamata Olives", "calories": 30, "total_fat_g": 3.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 90, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "naya-sumac-onions", "name": "Sumac Onions", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 20, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "naya-pickles", "name": "Lebanese Pickles", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 610, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "naya-pickled-turnips", "name": "Pickled Turnips", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 470, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "naya-tomatoes", "name": "Tomatoes", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 }
+          ]
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces",
+          "ingredients": [
+            { "id": "naya-toum", "name": "Toum (Garlic Whip)", "calories": 80, "total_fat_g": 8.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 70, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "naya-cucumber-yogurt", "name": "Cucumber Yogurt (Tzatziki)", "calories": 35, "total_fat_g": 3.0, "sat_fat_g": 2.0, "cholesterol_mg": 10, "sodium_mg": 50, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "naya-lemon-tahini", "name": "Lemon Tahini", "calories": 70, "total_fat_g": 6.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 70, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "naya-red-pepper-sauce", "name": "Spicy Red Pepper Sauce", "calories": 35, "total_fat_g": 3.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 100, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "naya-jalapeno-sauce", "name": "Zesty Jalapeño Sauce", "calories": 110, "total_fat_g": 11.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 95, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "naya-house-dressing", "name": "House Salad Dressing", "calories": 150, "total_fat_g": 16.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 330, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 }
+          ]
+        },
+        {
+          "id": "extras",
+          "label": "Extras",
+          "ingredients": []
+        }
+      ]
+    },
+    {
+      "id": "dig-inn",
+      "name": "Dig Inn (DIG)",
+      "categories": [
+        {
+          "id": "base",
+          "label": "Base",
+          "ingredients": [
+            { "id": "dig-greens", "name": "Farm Greens with Mint", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 10, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "dig-brown-rice", "name": "Classic Brown Rice", "calories": 270, "total_fat_g": 9.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 280, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 5.0 },
+            { "id": "dig-farro", "name": "Lemon & Herb Farro", "calories": 220, "total_fat_g": 5.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 480, "sugar_g": 4.0, "fiber_g": 6.0, "protein_g": 8.0 },
+            { "id": "dig-quinoa-lentils", "name": "Quinoa & Lentils", "calories": 216, "total_fat_g": 6.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 570, "sugar_g": 2.0, "fiber_g": 9.0, "protein_g": 9.0 }
+          ]
+        },
+        {
+          "id": "proteins",
+          "label": "Proteins",
+          "ingredients": [
+            { "id": "dig-salmon", "name": "Wild Alaskan Salmon", "calories": 130, "total_fat_g": 2.0, "sat_fat_g": 0.0, "cholesterol_mg": 80, "sodium_mg": 140, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 27.0 },
+            { "id": "dig-tofu", "name": "Maple Glazed Tofu", "calories": 280, "total_fat_g": 18.0, "sat_fat_g": 1.5, "cholesterol_mg": 0, "sodium_mg": 740, "sugar_g": 4.0, "fiber_g": 0.0, "protein_g": 17.0 },
+            { "id": "dig-meatballs", "name": "Meatballs with Tomato Ragu", "calories": 180, "total_fat_g": 7.0, "sat_fat_g": 2.0, "cholesterol_mg": 51, "sodium_mg": 610, "sugar_g": 3.0, "fiber_g": 2.0, "protein_g": 15.0 },
+            { "id": "dig-charred-chicken", "name": "Charred Chicken Thigh", "calories": 220, "total_fat_g": 10.0, "sat_fat_g": 3.0, "cholesterol_mg": 179, "sodium_mg": 410, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 27.0 },
+            { "id": "dig-roasted-chicken", "name": "Herb Roasted Chicken Breast", "calories": 170, "total_fat_g": 10.0, "sat_fat_g": 2.5, "cholesterol_mg": 60, "sodium_mg": 430, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 20.0 }
+          ]
+        },
+        {
+          "id": "toppings",
+          "label": "Toppings",
+          "ingredients": [
+            { "id": "dig-cheesy-cauliflower", "name": "Cheesy Cauliflower", "calories": 260, "total_fat_g": 8.0, "sat_fat_g": 5.0, "cholesterol_mg": 10, "sodium_mg": 770, "sugar_g": 8.0, "fiber_g": 8.0, "protein_g": 16.0 },
+            { "id": "dig-charred-broccoli", "name": "Charred Broccoli", "calories": 140, "total_fat_g": 10.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 340, "sugar_g": 3.0, "fiber_g": 4.0, "protein_g": 4.0 },
+            { "id": "dig-mac-cheese", "name": "Jasper Hill Mac & Cheese", "calories": 450, "total_fat_g": 19.0, "sat_fat_g": 14.0, "cholesterol_mg": 75, "sodium_mg": 970, "sugar_g": 3.0, "fiber_g": 4.0, "protein_g": 17.0 },
+            { "id": "dig-sweet-potatoes", "name": "Roasted Sweet Potatoes", "calories": 330, "total_fat_g": 14.0, "sat_fat_g": 1.5, "cholesterol_mg": 0, "sodium_mg": 440, "sugar_g": 10.0, "fiber_g": 7.0, "protein_g": 4.0 },
+            { "id": "dig-tomato-cucumber", "name": "Tomatoes & Cucumbers", "calories": 50, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 290, "sugar_g": 7.0, "fiber_g": 2.0, "protein_g": 2.0 },
+            { "id": "dig-carrots", "name": "Sheet Tray Carrots", "calories": 210, "total_fat_g": 16.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 470, "sugar_g": 8.0, "fiber_g": 5.0, "protein_g": 2.0 },
+            { "id": "dig-avocado", "name": "Avocado", "calories": 170, "total_fat_g": 16.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 105, "sugar_g": 0.0, "fiber_g": 6.0, "protein_g": 2.0 },
+            { "id": "dig-radish-lettuce", "name": "Crunchy Radish & Lettuce", "calories": 220, "total_fat_g": 22.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 740, "sugar_g": 2.0, "fiber_g": 2.0, "protein_g": 1.0 },
+            { "id": "dig-cannellini-beans", "name": "Herb Marinated Cannellini Beans", "calories": 840, "total_fat_g": 31.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 820, "sugar_g": 8.0, "fiber_g": 43.0, "protein_g": 37.0 },
+            { "id": "dig-peas-mushrooms", "name": "Spring Peas & Roasted Mushrooms", "calories": 110, "total_fat_g": 6.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 290, "sugar_g": 5.0, "fiber_g": 3.0, "protein_g": 4.0 }
+          ]
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces",
+          "ingredients": []
+        },
+        {
+          "id": "extras",
+          "label": "Extras",
+          "ingredients": []
+        }
+      ]
+    },
+    {
+      "id": "just-salad",
+      "name": "Just Salad",
+      "categories": [
+        {
+          "id": "base",
+          "label": "Base",
+          "ingredients": [
+            { "id": "js-arugula", "name": "Arugula", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 20, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 2.0 },
+            { "id": "js-spinach", "name": "Baby Spinach", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 84, "sugar_g": 1.0, "fiber_g": 3.0, "protein_g": 3.0 },
+            { "id": "js-romaine", "name": "Extra Crisp Romaine", "calories": 30, "total_fat_g": 0.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 15, "sugar_g": 2.0, "fiber_g": 4.0, "protein_g": 2.0 },
+            { "id": "js-supergreens", "name": "SuperGreens Blend", "calories": 25, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 35, "sugar_g": 1.0, "fiber_g": 2.0, "protein_g": 2.0 },
+            { "id": "js-kale", "name": "Shredded Kale", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 20, "sugar_g": 1.0, "fiber_g": 2.0, "protein_g": 2.0 },
+            { "id": "js-brown-rice", "name": "Regenerative Brown Rice", "calories": 90, "total_fat_g": 1.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 110, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "js-quinoa", "name": "Organic Quinoa", "calories": 90, "total_fat_g": 3.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 5, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 3.0 }
+          ]
+        },
+        {
+          "id": "proteins",
+          "label": "Proteins",
+          "ingredients": [
+            { "id": "js-egg", "name": "Jammy Egg", "calories": 70, "total_fat_g": 5.0, "sat_fat_g": 2.0, "cholesterol_mg": 185, "sodium_mg": 65, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 6.0 },
+            { "id": "js-crispy-chicken", "name": "Oven Crispy Chicken", "calories": 210, "total_fat_g": 12.0, "sat_fat_g": 8.0, "cholesterol_mg": 40, "sodium_mg": 460, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 16.0 },
+            { "id": "js-braised-chicken", "name": "Braised Chicken Thigh", "calories": 200, "total_fat_g": 15.0, "sat_fat_g": 5.0, "cholesterol_mg": 90, "sodium_mg": 360, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 12.0 },
+            { "id": "js-roasted-chicken", "name": "Oven Roasted Chicken", "calories": 130, "total_fat_g": 3.0, "sat_fat_g": 0.0, "cholesterol_mg": 75, "sodium_mg": 55, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 20.0 },
+            { "id": "js-impossible-chicken", "name": "Impossible™ Chicken (Plant-Based)", "calories": 110, "total_fat_g": 5.0, "sat_fat_g": 0.5, "cholesterol_mg": 45, "sodium_mg": 250, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 6.0 },
+            { "id": "js-tofu", "name": "Organic Sesame Tofu", "calories": 80, "total_fat_g": 6.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 120, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 7.0 }
+          ]
+        },
+        {
+          "id": "toppings",
+          "label": "Toppings",
+          "ingredients": [
+            { "id": "js-apples", "name": "Sliced Apples", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 4.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "js-beets", "name": "Hand-Cut Beets", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 25, "sugar_g": 2.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-broccoli", "name": "Shaved Broccoli", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 15, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "js-carrots", "name": "Sliced Carrots", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 25, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "js-chickpeas", "name": "House-Cooked Chickpeas", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "js-cilantro", "name": "Fresh Cilantro", "calories": 0, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-corn", "name": "Roasted Corn", "calories": 35, "total_fat_g": 0.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 2.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "js-croutons", "name": "Garlic Butter Croutons", "calories": 120, "total_fat_g": 4.5, "sat_fat_g": 1.5, "cholesterol_mg": 0, "sodium_mg": 280, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 3.0 },
+            { "id": "js-cucumbers", "name": "Sliced Cucumbers", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-cranberries", "name": "Dried Cranberries", "calories": 110, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 26.0, "fiber_g": 2.0, "protein_g": 0.0 },
+            { "id": "js-edamame", "name": "Edamame", "calories": 50, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 3.0, "protein_g": 5.0 },
+            { "id": "js-tomatoes", "name": "Sliced Grape Tomatoes", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-pickled-onion", "name": "Overnight Pickled Onion", "calories": 25, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 125, "sugar_g": 3.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-harissa-pita", "name": "Spicy Harissa Pita Chips", "calories": 80, "total_fat_g": 2.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 150, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "js-pumpkin-seeds", "name": "Tajin® Spiced Pumpkin Seeds", "calories": 140, "total_fat_g": 6.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 340, "sugar_g": 0.0, "fiber_g": 6.0, "protein_g": 6.0 },
+            { "id": "js-sweet-potatoes", "name": "Roasted Sweet Potatoes", "calories": 100, "total_fat_g": 5.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 85, "sugar_g": 4.0, "fiber_g": 2.0, "protein_g": 1.0 },
+            { "id": "js-tortilla-chips", "name": "Crunchy Tortilla Chips", "calories": 90, "total_fat_g": 4.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 65, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "js-crispy-onions", "name": "Crunchy Onions", "calories": 35, "total_fat_g": 2.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 65, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-wonton-strips", "name": "Crunchy Wonton Strips", "calories": 110, "total_fat_g": 4.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 200, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 3.0 },
+            { "id": "js-furikake", "name": "Japanese Furikake Shake", "calories": 5, "total_fat_g": 0.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 20, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-pepperoncini", "name": "Sliced Pepperoncini", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 860, "sugar_g": 2.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-pickles", "name": "Grillo's Pickles", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 300, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 }
+          ]
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces",
+          "ingredients": [
+            { "id": "js-balsamic-vinaigrette", "name": "Balsamic Vinaigrette", "calories": 160, "total_fat_g": 18.0, "sat_fat_g": 1.5, "cholesterol_mg": 0, "sodium_mg": 45, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-chipotle-vinaigrette", "name": "Chipotle Vinaigrette", "calories": 150, "total_fat_g": 17.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 95, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-lemon-basil-vinaigrette", "name": "Lemon Basil Vinaigrette", "calories": 120, "total_fat_g": 13.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 75, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-honey-mustard", "name": "Honey Mustard Vinaigrette", "calories": 110, "total_fat_g": 9.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 140, "sugar_g": 7.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-miso-ginger", "name": "Miso Ginger Vinaigrette", "calories": 90, "total_fat_g": 9.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 490, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "js-thai-peanut", "name": "Thai Peanut Dressing", "calories": 130, "total_fat_g": 13.0, "sat_fat_g": 1.5, "cholesterol_mg": 0, "sodium_mg": 140, "sugar_g": 3.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "js-creamy-caesar", "name": "Creamy Caesar", "calories": 150, "total_fat_g": 15.0, "sat_fat_g": 3.5, "cholesterol_mg": 15, "sodium_mg": 240, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 3.0 },
+            { "id": "js-ranch", "name": "Buttermilk Ranch", "calories": 120, "total_fat_g": 13.0, "sat_fat_g": 2.0, "cholesterol_mg": 10, "sodium_mg": 120, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-buffalo-ranch", "name": "Spicy Buffalo Ranch", "calories": 70, "total_fat_g": 8.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 520, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-poblano-ranch", "name": "Smoky Poblano Ranch", "calories": 130, "total_fat_g": 13.0, "sat_fat_g": 2.0, "cholesterol_mg": 10, "sodium_mg": 130, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-yogurt-cucumber", "name": "Yogurt Cucumber (Tzatziki) Dressing", "calories": 35, "total_fat_g": 3.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 65, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "js-balsamic-vinegar", "name": "Balsamic Vinegar", "calories": 25, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 5, "sugar_g": 4.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-red-wine-vinegar", "name": "Red Wine Vinegar", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-evoo-lemon", "name": "Extra Virgin Olive Oil + Fresh Lemon", "calories": 130, "total_fat_g": 14.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-hot-honey", "name": "Mike's Hot Honey Vinaigrette Drizzle", "calories": 170, "total_fat_g": 18.0, "sat_fat_g": 1.5, "cholesterol_mg": 0, "sodium_mg": 50, "sugar_g": 3.0, "fiber_g": 2.0, "protein_g": 0.0 }
+          ]
+        },
+        {
+          "id": "extras",
+          "label": "Extras",
+          "ingredients": [
+            { "id": "js-avocado", "name": "Hass Avocado", "calories": 70, "total_fat_g": 6.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 3.0, "protein_g": 1.0 },
+            { "id": "js-avocado-mash", "name": "Homemade Avocado Mash", "calories": 90, "total_fat_g": 8.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 1.0 },
+            { "id": "js-hemp-hearts", "name": "Bob's Red Mill Hemp Hearts", "calories": 60, "total_fat_g": 4.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 3.0 },
+            { "id": "js-almonds", "name": "Chopped Almonds", "calories": 60, "total_fat_g": 6.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "js-balsamic-mushrooms", "name": "Roasted Balsamic Mushrooms", "calories": 60, "total_fat_g": 4.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-pico", "name": "Homemade Pico de Gallo", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 5.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-roasted-cauliflower", "name": "Roasted Cauliflower", "calories": 25, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 40, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "js-fajita-veg", "name": "Fajitas + Corn", "calories": 45, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "js-black-lentils", "name": "Black Lentils", "calories": 90, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 5.0, "protein_g": 8.0 },
+            { "id": "js-buffalo-cauliflower", "name": "Buffalo Cauliflower", "calories": 70, "total_fat_g": 6.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 1010, "sugar_g": 2.0, "fiber_g": 2.0, "protein_g": 1.0 },
+            { "id": "js-cotija", "name": "Grated Cotija Cheese", "calories": 50, "total_fat_g": 4.0, "sat_fat_g": 2.5, "cholesterol_mg": 5, "sodium_mg": 180, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "js-feta", "name": "Crumbled Feta", "calories": 100, "total_fat_g": 8.0, "sat_fat_g": 5.0, "cholesterol_mg": 25, "sodium_mg": 260, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 4.0 },
+            { "id": "js-vegan-feta", "name": "Violife Vegan Feta", "calories": 60, "total_fat_g": 5.0, "sat_fat_g": 4.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "js-goat-cheese", "name": "Creamy Goat Cheese", "calories": 110, "total_fat_g": 8.0, "sat_fat_g": 6.0, "cholesterol_mg": 15, "sodium_mg": 340, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 6.0 },
+            { "id": "js-parmesan", "name": "Shaved Parmesan", "calories": 120, "total_fat_g": 8.0, "sat_fat_g": 5.0, "cholesterol_mg": 25, "sodium_mg": 510, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 8.0 },
+            { "id": "js-cheddar", "name": "Sharp White Cheddar", "calories": 110, "total_fat_g": 9.0, "sat_fat_g": 5.0, "cholesterol_mg": 30, "sodium_mg": 380, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 7.0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chopt",
+      "name": "Chopt",
+      "categories": [
+        {
+          "id": "base",
+          "label": "Base",
+          "ingredients": [
+            { "id": "chopt-blend", "name": "Chopt Lettuce Blend (Romaine, Kale & Purple Cabbage)", "calories": 70, "total_fat_g": 1.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 95, "sugar_g": 5.0, "fiber_g": 6.0, "protein_g": 6.0 },
+            { "id": "chopt-romaine", "name": "Romaine", "calories": 45, "total_fat_g": 1.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 20, "sugar_g": 3.0, "fiber_g": 5.0, "protein_g": 3.0 },
+            { "id": "chopt-kale", "name": "Kale", "calories": 90, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 60, "sugar_g": 6.0, "fiber_g": 6.0, "protein_g": 6.0 },
+            { "id": "chopt-arugula", "name": "Arugula", "calories": 30, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 60, "sugar_g": 6.0, "fiber_g": 0.0, "protein_g": 6.0 },
+            { "id": "chopt-spinach", "name": "Spinach", "calories": 25, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 84, "sugar_g": 1.0, "fiber_g": 3.0, "protein_g": 3.0 },
+            { "id": "chopt-cabbage-blend", "name": "Cabbage & Cilantro Blend", "calories": 70, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 70, "sugar_g": 8.0, "fiber_g": 7.0, "protein_g": 4.0 },
+            { "id": "chopt-warm-grains", "name": "Warm Grains (Brown Rice + Quinoa)", "calories": 240, "total_fat_g": 2.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 900, "sugar_g": 2.0, "fiber_g": 3.0, "protein_g": 5.0 },
+            { "id": "chopt-cauliflower-rice", "name": "Cauliflower Rice", "calories": 40, "total_fat_g": 1.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 25, "sugar_g": 3.0, "fiber_g": 4.0, "protein_g": 3.0 }
+          ]
+        },
+        {
+          "id": "proteins",
+          "label": "Proteins",
+          "ingredients": [
+            { "id": "chopt-grilled-chicken", "name": "Grilled Chicken", "calories": 100, "total_fat_g": 1.0, "sat_fat_g": 0.0, "cholesterol_mg": 50, "sodium_mg": 350, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 21.0 },
+            { "id": "chopt-chipotle-chicken", "name": "Chipotle Chicken", "calories": 100, "total_fat_g": 1.5, "sat_fat_g": 0.0, "cholesterol_mg": 55, "sodium_mg": 100, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 21.0 },
+            { "id": "chopt-fried-chicken", "name": "Panko Fried Chicken", "calories": 190, "total_fat_g": 3.5, "sat_fat_g": 1.0, "cholesterol_mg": 75, "sodium_mg": 250, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 23.0 },
+            { "id": "chopt-shrimp", "name": "Shrimp", "calories": 80, "total_fat_g": 1.0, "sat_fat_g": 0.0, "cholesterol_mg": 135, "sodium_mg": 610, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 15.0 },
+            { "id": "chopt-bacon", "name": "All-Natural Smoked Bacon", "calories": 125, "total_fat_g": 8.0, "sat_fat_g": 3.0, "cholesterol_mg": 25, "sodium_mg": 1100, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 15.0 },
+            { "id": "chopt-falafel", "name": "Falafel", "calories": 140, "total_fat_g": 4.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 510, "sugar_g": 3.0, "fiber_g": 5.0, "protein_g": 6.0 },
+            { "id": "chopt-tofu", "name": "Marinated Tofu", "calories": 45, "total_fat_g": 3.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 6.0 },
+            { "id": "chopt-tinga", "name": "Braised Chicken Tinga", "calories": 100, "total_fat_g": 3.0, "sat_fat_g": 1.0, "cholesterol_mg": 70, "sodium_mg": 310, "sugar_g": 2.0, "fiber_g": 0.0, "protein_g": 15.0 },
+            { "id": "chopt-warm-chicken", "name": "Warm Roasted Chicken", "calories": 80, "total_fat_g": 3.0, "sat_fat_g": 1.0, "cholesterol_mg": 70, "sodium_mg": 330, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 15.0 },
+            { "id": "chopt-harissa-chicken", "name": "Warm Harissa Chicken", "calories": 90, "total_fat_g": 4.0, "sat_fat_g": 1.0, "cholesterol_mg": 64, "sodium_mg": 438, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 14.0 },
+            { "id": "chopt-salmon", "name": "Norwegian Salmon", "calories": 220, "total_fat_g": 14.0, "sat_fat_g": 3.0, "cholesterol_mg": 60, "sodium_mg": 470, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 21.0 },
+            { "id": "chopt-steak", "name": "Seared Steak", "calories": 140, "total_fat_g": 6.0, "sat_fat_g": 0.0, "cholesterol_mg": 30, "sodium_mg": 410, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 19.0 },
+            { "id": "chopt-turkey", "name": "Roasted Turkey", "calories": 110, "total_fat_g": 1.5, "sat_fat_g": 0.0, "cholesterol_mg": 55, "sodium_mg": 380, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 23.0 }
+          ]
+        },
+        {
+          "id": "toppings",
+          "label": "Toppings",
+          "ingredients": [
+            { "id": "chopt-tomatoes", "name": "Grape Tomatoes", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 2.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "chopt-corn", "name": "Charred Corn", "calories": 45, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "chopt-jalapeno", "name": "Jalapeño Peppers", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "chopt-radish", "name": "Fresh Radish", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 10, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "chopt-cucumber", "name": "English Cucumber", "calories": 10, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "chopt-apples", "name": "Seasonal Apples", "calories": 25, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 5.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "chopt-hearts-of-palm", "name": "Hearts of Palm", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 100, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 2.0 },
+            { "id": "chopt-edamame", "name": "Edamame", "calories": 60, "total_fat_g": 2.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 3.0, "protein_g": 6.0 },
+            { "id": "chopt-carrots", "name": "Carrots", "calories": 20, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 35, "sugar_g": 2.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "chopt-roasted-broccoli", "name": "Roasted Broccoli", "calories": 70, "total_fat_g": 4.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 530, "sugar_g": 1.0, "fiber_g": 3.0, "protein_g": 2.0 },
+            { "id": "chopt-roasted-sweet-potatoes", "name": "Roasted Sweet Potatoes", "calories": 130, "total_fat_g": 5.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 270, "sugar_g": 6.0, "fiber_g": 3.0, "protein_g": 2.0 },
+            { "id": "chopt-olives", "name": "Simply Olives", "calories": 90, "total_fat_g": 9.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 480, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 0.0 },
+            { "id": "chopt-mama-lils", "name": "Mama Lil's Spicy Peppers", "calories": 50, "total_fat_g": 3.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 190, "sugar_g": 3.0, "fiber_g": 1.0, "protein_g": 1.0 },
+            { "id": "chopt-spicy-peppers", "name": "Spicy Pickled Peppers", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 460, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "chopt-pickled-onions", "name": "Pickled Red Onion", "calories": 15, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 230, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "chopt-beets", "name": "Purple Beets", "calories": 30, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 25, "sugar_g": 5.0, "fiber_g": 2.0, "protein_g": 1.0 },
+            { "id": "chopt-scallions", "name": "Scallions", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "chopt-celery", "name": "Celery", "calories": 5, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 35, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 0.0 },
+            { "id": "chopt-chickpeas", "name": "Chickpeas", "calories": 40, "total_fat_g": 0.5, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 60, "sugar_g": 1.0, "fiber_g": 2.0, "protein_g": 2.0 },
+            { "id": "chopt-black-beans", "name": "Black Beans", "calories": 70, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 0.0, "fiber_g": 5.0, "protein_g": 5.0 },
+            { "id": "chopt-hummus", "name": "Hummus", "calories": 150, "total_fat_g": 12.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 208, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 3.0 },
+            { "id": "chopt-tortilla-chips", "name": "Tortilla Chips", "calories": 110, "total_fat_g": 5.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 55, "sugar_g": 0.0, "fiber_g": 2.0, "protein_g": 2.0 },
+            { "id": "chopt-parmesan-crisps", "name": "Parmesan Crisps", "calories": 90, "total_fat_g": 5.0, "sat_fat_g": 3.5, "cholesterol_mg": 20, "sodium_mg": 150, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 6.0 },
+            { "id": "chopt-almonds", "name": "Roasted Almonds", "calories": 80, "total_fat_g": 7.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 2.0, "protein_g": 3.0 },
+            { "id": "chopt-croutons", "name": "Artisan Croutons", "calories": 110, "total_fat_g": 5.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 135, "sugar_g": 0.0, "fiber_g": 1.0, "protein_g": 2.0 },
+            { "id": "chopt-cranberries", "name": "Dried Cranberries", "calories": 130, "total_fat_g": 0.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 31.0, "fiber_g": 2.0, "protein_g": 0.0 },
+            { "id": "chopt-wontons", "name": "Crispy Wontons", "calories": 70, "total_fat_g": 4.0, "sat_fat_g": 0.0, "cholesterol_mg": 0, "sodium_mg": 10, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 2.0 },
+            { "id": "chopt-pita-chips", "name": "Pita Chips", "calories": 130, "total_fat_g": 5.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 270, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 3.0 },
+            { "id": "chopt-shallots", "name": "Crispy Shallots", "calories": 20, "total_fat_g": 1.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 0, "sugar_g": 1.0, "fiber_g": 1.0, "protein_g": 0.0 }
+          ]
+        },
+        {
+          "id": "sauces",
+          "label": "Sauces",
+          "ingredients": [
+            { "id": "chopt-white-balsamic", "name": "White Balsamic Vinaigrette", "calories": 140, "total_fat_g": 14.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 200, "sugar_g": 2.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "chopt-honey-dijon", "name": "Honey Dijon Vinaigrette", "calories": 130, "total_fat_g": 13.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 75, "sugar_g": 7.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "chopt-smoky-poblano-ranch", "name": "Smoky Poblano Ranch", "calories": 130, "total_fat_g": 13.0, "sat_fat_g": 2.0, "cholesterol_mg": 10, "sodium_mg": 130, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "chopt-spicy-buffalo-ranch", "name": "Spicy Buffalo Ranch", "calories": 70, "total_fat_g": 8.0, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 520, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "chopt-tex-mex-ranch", "name": "Tex Mex Ranch", "calories": 120, "total_fat_g": 12.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 300, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 0.0 },
+            { "id": "chopt-mexican-caesar", "name": "Mexican Caesar Dressing", "calories": 150, "total_fat_g": 15.0, "sat_fat_g": 3.0, "cholesterol_mg": 15, "sodium_mg": 240, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 3.0 },
+            { "id": "chopt-miso-sesame", "name": "Miso Sesame Ginger Dressing", "calories": 90, "total_fat_g": 9.0, "sat_fat_g": 0.5, "cholesterol_mg": 0, "sodium_mg": 400, "sugar_g": 3.0, "fiber_g": 0.0, "protein_g": 1.0 },
+            { "id": "chopt-lemon-tahini", "name": "Lemon Tahini Dressing", "calories": 150, "total_fat_g": 14.0, "sat_fat_g": 2.0, "cholesterol_mg": 0, "sodium_mg": 250, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 1.0 }
+          ]
+        },
+        {
+          "id": "extras",
+          "label": "Extras",
+          "ingredients": [
+            { "id": "chopt-avocado", "name": "Avocado (Half)", "calories": 80, "total_fat_g": 7.5, "sat_fat_g": 1.0, "cholesterol_mg": 0, "sodium_mg": 5, "sugar_g": 0.5, "fiber_g": 3.5, "protein_g": 1.0 },
+            { "id": "chopt-goat-cheese", "name": "Goat Cheese", "calories": 140, "total_fat_g": 12.0, "sat_fat_g": 8.0, "cholesterol_mg": 40, "sodium_mg": 280, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 6.0 },
+            { "id": "chopt-pepper-jack", "name": "Pepper Jack Cheese", "calories": 250, "total_fat_g": 20.0, "sat_fat_g": 13.0, "cholesterol_mg": 65, "sodium_mg": 380, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 16.0 },
+            { "id": "chopt-blue-cheese", "name": "Blue Cheese", "calories": 100, "total_fat_g": 8.0, "sat_fat_g": 5.0, "cholesterol_mg": 20, "sodium_mg": 320, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 6.0 },
+            { "id": "chopt-feta", "name": "Feta", "calories": 70, "total_fat_g": 6.0, "sat_fat_g": 4.0, "cholesterol_mg": 25, "sodium_mg": 260, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 4.0 },
+            { "id": "chopt-cotija", "name": "Cotija Cheese", "calories": 100, "total_fat_g": 9.0, "sat_fat_g": 5.0, "cholesterol_mg": 30, "sodium_mg": 400, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 6.0 },
+            { "id": "chopt-parmesan", "name": "Aged Parmesan", "calories": 120, "total_fat_g": 8.0, "sat_fat_g": 5.0, "cholesterol_mg": 25, "sodium_mg": 510, "sugar_g": 0.0, "fiber_g": 0.0, "protein_g": 8.0 },
+            { "id": "chopt-egg", "name": "Cage-Free Egg", "calories": 110, "total_fat_g": 8.0, "sat_fat_g": 2.5, "cholesterol_mg": 265, "sodium_mg": 90, "sugar_g": 1.0, "fiber_g": 0.0, "protein_g": 9.0 }
           ]
         }
       ]
